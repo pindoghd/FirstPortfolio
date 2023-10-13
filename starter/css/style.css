@@ -1,86 +1,119 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  
+  background-color: black;
 }
 
- header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1%;
   background-color: #13293d;
   color: #fff;
-
-  
+  width: 100%;
 }
 
-ul { 
-  display: flex;
-  justify-content: space-between;
-  min-width: 500px;
-
+ul {
+  display: inline;
+  font-style: italic;
+  font-size: larger;
+  color: red;
+  list-style: none;
+  padding: 0;
+  word-spacing: 5%;
  
 }
 
-
-  
-
-
-
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-  height: 5%;
-   
-  }
-
-  .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-    color: red;
-    font-size: 70px;
-
-  }
-
-  #about { 
-    font-size: larger;
-    float: left;
-  }
-
-  #description {
-    font-size: medium;
-    float: right;
-  }
-
-
-h1 {
-  
-  color: red;
+.container img {
   width: 100%;
-  padding : 10px 0 10px 0;
-  margin:0px;
-
+  height: 10%;
+  background-image: url("/starter/images/02-hero-bg.jpg");
 }
 
-
-h2{color: blue;
-}
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+  color: red;
+  font-size: 50px;
 }
 
-p {
-  margin: 0;
+.page-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: antiquewhite;
 }
+
+#about {
+  font-size: large;
+  padding: 15%;
+  text-align: left;
+  
+}
+
+p { 
+  text-align: right;
+  float: right;
+}
+
+h2 {
+  color: blue;
+  float: left;
+  text-align: left;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.toprow, .middlerows, .bottomrow {
+  width: calc(33.33% - 20px);
+  margin-right: 20px;
+  border: red;
+  display: flex;
+}
+
+.work1 {border-radius: 15px;
+border-color: black;
+border-style: solid;}
+
+.work2 { border-radius: 15px;
+  border-color: black;
+  border-style: solid;
+}
+
+.work3 {
+  border-radius: 15px;
+  border-color: black;
+  border-style: solid;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #4c4c4d;
+  color: #fff;
+  width: 100%;
+  margin: 20px 0;
+}
+footer ul {
+  display: inline;
+  list-style: none;
+  padding: 0;
+  margin-right: 10px;
+  
+}
+
